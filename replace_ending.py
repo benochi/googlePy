@@ -4,8 +4,8 @@ def replace_ending(sentence, old, new):
 		# Using i as the slicing index, combine the part
 		# of the sentence up to the matched string at the 
 		# end with the new string
-		i = sentence.rfind(old)
-		new_sentence = sentence[:i] +new
+		i = len(old)
+		new_sentence = sentence[:-i] +new
 		return new_sentence
 
 	# Return the original sentence if there is no match 
