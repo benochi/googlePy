@@ -64,13 +64,20 @@ def calculate_frequencies(file_contents):
     "all", "any", "both", "each", "few", "more", "some", "such", "no", "nor", "too", "very", "can", "will", "just"]
     
     # LEARNER CODE START HERE
+    ###dict###
     d = {}
+    ###split file contents into words###
     f = file_contents.split()
+    ###iterate over each word###
     for word in f:
         if word not in uninteresting_words :
+            ###see if word is interesting###
             for letter in word:
+                ###iterate over each letter in word to search for punctuation###
                 if letter in punctuations:
+                    ###if punctuation, remove it###
                     letter.replace(punctuations,"")
+            ###check if word in dictionary, if not add it and set key to word value to count###
             if word not in d.keys():
                 d[word] = 0
             else :
