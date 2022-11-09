@@ -35,3 +35,6 @@ p = {"description": "white kitten",
      "age_months": 6}
 response = requests.post("https://example.com/path/to/api", data=p)
 
+#
+response.request.url
+response.request.body
