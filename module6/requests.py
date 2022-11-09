@@ -38,3 +38,10 @@ response = requests.post("https://example.com/path/to/api", data=p)
 #
 response.request.url
 response.request.body
+
+###
+response = requests.post("https://example.com/path/to/api", json=p)
+response.request.url
+'https://example.com/path/to/api'
+response.request.body
+b'{"description": "white kitten", "name": "Snowball", "age_months": 6}'
