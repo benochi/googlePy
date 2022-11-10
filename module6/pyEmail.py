@@ -12,7 +12,7 @@ print(message)
 #From: me@example.com
 #To: you@example.com
 #Subject: Greetings from me@example.com to you@example.com!
-
+#body
 body = """Hey there! I'm learning to send emails using Python!"""
 message.set_content(body)
 
